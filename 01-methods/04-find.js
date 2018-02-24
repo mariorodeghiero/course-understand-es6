@@ -5,8 +5,8 @@ let students = [
   { name: "Lana", age: 16 }
 ];
 
-let greater18 = students.filter(student => student.age >= 18);
+let studentName = students.find(student => student.name == "Bento");
 
 console.log("------------------------------------");
-console.log(greater18);
+console.log(studentName);
 console.log("------------------------------------");
