@@ -5,15 +5,8 @@ let hatSelector = function(wizard) {
   console.log(`Wizard: ${wizard} | House: ${house}`);
 };
 
-let wizards = ["harry Potter", "hermione Granger", "Rony Weasley"];
+let wizards = ["Harry Potter", "Hermione Granger", "Rony Weasley"];
 
-let iterator = wizards[Symbol.iterator]();
-
-let done = false;
-
-let nextItem = iterator.next();
-do {
-  let wizard = nextItem.value;
+for (const wizard of wizards) {
   hatSelector(wizard);
-  nextItem = iterator.next();
-} while (!nextItem.done);
+}
