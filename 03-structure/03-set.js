@@ -23,3 +23,7 @@ console.log("------------------------------------");
 console.log(playList.size);
 console.log(playList);
 console.log("------------------------------------");
+
+for (const music of playList) {
+  console.log(music);
+}
