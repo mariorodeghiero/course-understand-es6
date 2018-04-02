@@ -1,3 +1,7 @@
+/**
+ * Primeiramente deve declarar sua classe para só então acessá-la, pois do contrário o código a seguir irá lançar uma
+ * exceção: ReferenceError:
+ */
 class Car {
   constructor(model, chassis, dors) {
     this.model = model;
